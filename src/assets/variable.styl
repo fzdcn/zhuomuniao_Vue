@@ -1,0 +1,95 @@
+px2rem($px)
+  $rem = 100px
+  $px/$rem rem
+
+textMaxLine($line = 1)
+  overflow hidden
+  text-overflow ellipsis
+  display box
+  display -webkit-box
+  line-clamp $line
+  -webkit-line-clamp $line
+  -webkit-box-orient vertical
+
+img-center(direction = 'vertical')
+  position relative
+  overflow hidden
+  img
+    position absolute
+    if direction == 'horizon'
+      height 100%
+      left 50%
+      transform translate(-50%)
+    if direction == 'vertical'
+      width 100%
+      top 50%
+      transform translateY(-50%)
+    if direction == 'all'
+      /* 需要限制宽高，将自适应宽高并且等比例缩放 */
+      left 50%
+      top 50%
+      transform translate(-50%, -50%)
+
+/*公共颜色*/
+$green = green
+$darkGreen = #00a84c
+$blue = blue
+$lightBlue = #007bff
+$darkBlue = darken($lightBlue, 30%)
+$white = #fff
+$yellow = yellow
+$lightYellow = #ffc107
+$orangeYellow= #ee600c
+$red = red
+$darkRed = #c2272d
+$lightRed = #e10f47
+$grey = grey
+$darkGrey = #666
+$lightGrey = #f5f5f5
+$lightGrey1 = #e4e4e4
+$blackGrey = #333
+$black = black
+
+/*公共大小*/
+$f12 = px2rem(12px)
+$f13 = px2rem(13px)
+$f14 = px2rem(14px)
+$f15 = px2rem(15px)
+$f16 = px2rem(16px)
+$f17 = px2rem(17px)
+$f18 = px2rem(18px)
+$f19 = px2rem(19px)
+$f20 = px2rem(20px)
+$f21 = px2rem(21px)
+$f22 = px2rem(22px)
+$f23 = px2rem(23px)
+$f24 = px2rem(24px)
+$f25 = px2rem(25px)
+$f26 = px2rem(26px)
+$f27 = px2rem(27px)
+$f28 = px2rem(28px)
+$f29 = px2rem(29px)
+$f30 = px2rem(30px)
+$f31 = px2rem(31px)
+$f32 = px2rem(32px)
+$f33 = px2rem(33px)
+$f34 = px2rem(34px)
+$f35 = px2rem(35px)
+$f36 = px2rem(36px)
+$f37 = px2rem(37px)
+$f38 = px2rem(38px)
+$f39 = px2rem(39px)
+$f40 = px2rem(40px)
+
+$fontSizeExtraHuge = px2rem(44px)
+$fontSizeHuge = px2rem(40px)
+$fontSizeExtraLarge = px2rem(36px)
+$fontSizeLarge = px2rem(32px)
+$fontSizeMedium = px2rem(28px)
+$fontSizeSmall = px2rem(24px)
+$fontSizeExtraSmall = px2rem(20px)
+
+$paddingExtraSmall = px2rem(20px)
+$paddingSmall = px2rem(24px)
+$paddingMedium = px2rem(30px)
+$paddingLarge = px2rem(40px)

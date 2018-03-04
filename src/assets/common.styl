@@ -1,0 +1,223 @@
+@import "variable.styl"
+
+body
+  font-family -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif
+  background-color #f5f5f5
+  line-height 1.4
+  font-size $fontSizeMedium
+  margin 0
+
+.empty-btn
+  color $darkGreen
+
+a
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+/*字体颜色*/
+.green
+  color $green
+
+.dark-green
+  color $darkGreen
+
+.blue
+  color $blue
+
+.light-blue
+  color $lightBlue
+
+.yellow
+  color $yellow
+
+.light-yellow
+  color $lightYellow
+
+.orange-yellow
+  color $orangeYellow
+
+.red
+  color $red
+
+.dark-red
+  color $darkRed
+
+.light-red
+  color $lightRed
+
+.grey
+  color $grey
+
+.light-grey
+  color $lightGrey
+
+.light-grey-1
+  color $lightGrey1
+
+.black-grey
+  color $blackGrey
+
+.dark-grey
+  color $darkGrey
+
+.white
+  color $white
+
+.black
+  color $black
+
+/*背景颜色*/
+.bg-blue
+  background-color $blue
+  color $white
+
+.bg-light-blue
+  background-color $lightBlue
+  color $white
+
+.bg-light-yellow
+  background-color $lightYellow
+  color $white
+
+.bg-red
+  background-color $red
+  color $white
+
+.bg-dark-red
+  background-color $darkRed
+  color $white
+
+.bg-grey
+  background-color $grey
+
+.bg-dark-grey
+  background-color $darkGrey
+
+.bg-light-grey
+  background-color $lightGrey
+
+.bg-light-grey-1
+  background-color $lightGrey1
+
+.bg-white
+  background-color $white
+
+.bg-dark-green
+  background-color $darkGreen
+  color $white
+
+.bg-green
+  background-color $green
+  color $white
+
+.btn
+  padding px2rem(11px) px2rem(32px)
+  text-align center
+  color $white
+  display inline-block
+  &:link
+    color $white
+  &:visited
+    color $white
+  &:hover
+    color $white
+  &:active
+    color $white
+  &.btn-sm
+    font-size $fontSizeSmall
+  &.btn-lg
+    padding px2rem(20px) px2rem(80px)
+  &.btn-block
+    display block
+    width: 100%
+  &.btn-red
+    background-color $darkRed
+  &.btn-green
+    background-color $darkGreen
+  &.btn-blue
+    background-color $lightBlue
+  &.btn-grey
+    background-color $white
+    border 1px solid $darkGrey
+    color $darkGrey
+    &:link
+      color $darkGrey
+    &:visited
+      color $darkGrey
+    &:hover
+      color $darkGrey
+    &:active
+      color $darkGrey
+
+.fr
+  float right
+
+.fl
+  float left
+
+.clear
+  clear both
+
+.text-center
+  text-align center
+
+.text-left
+  text-align left
+
+.text-right
+  text-align right
+
+.text-bold
+  font-weight bold
+
+.center-img
+  display flex
+  justify-content center
+  align-items center
+  overflow hidden
+  img
+    min-width 100%
+    min-height 100%
+
+.image-max-width-100
+  img
+    max-width 100%
+    height: auto !important;
+  canvas
+    max-width 100%
+
+a
+  text-decoration none
+
+a:focus
+  outline 0
+
+ul, ol, li
+  list-style none
+  padding 0
+  margin 0
+
+h1, h2, h3, h4, h5, h6, p
+  margin 0
+  padding 0
+  font-weight normal
+
+[v-cloak]
+  display none !important
+
+img
+  max-width 100%
+  border 0
+  vertical-align middle
+
+dl
+  margin 0
+
+dd
+  margin 0
+
+input, select, textarea, button
+  outline none
+  border none
+
+textarea
+  resize none
