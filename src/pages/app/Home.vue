@@ -20,11 +20,10 @@
   import Foot from '../../components/Footer';
   import BenefitLife from './_BenefitLife';
   import DomesticService from './_DomesticService';
-  import UserEvaluate from './_UserEvaluate'
-  import LifeService from './_LifeService'
+  import UserEvaluate from './_UserEvaluate';
+  import LifeService from './_LifeService';
   import CompanySlogan from './_CompanySlogan';
   import MeScroll from '../../components/MeScroll';
-  import {pageScroll} from '../../config/functions';
   export default {
     name: 'Home',
     components: {
